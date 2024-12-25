@@ -15,7 +15,7 @@ import {
   Flex, 
   Progress 
 } from "antd";
-
+import Chartnew from "./Chartnew"
 
 const { Content } = Layout;
 
@@ -554,7 +554,7 @@ export default function Landing() {
            
             title="Holidays"
             
-        extra={<select className="shadow-sm rounded-2 p-">
+        extra={<select className="shadow-sm rounded-2 ">
           <option>2024</option>
           <option>2024</option>
           <option>2024</option>
@@ -573,7 +573,7 @@ export default function Landing() {
           <Card
             title="Leaves"
              className="shadow-md rounded-4 p-3"
-             extra={<select className="shadow-sm rounded-2 p-">
+             extra={<select className="shadow-sm rounded-2 ">
               <option>2024</option>
               <option>2024</option>
               <option>2024</option>
@@ -602,7 +602,7 @@ export default function Landing() {
           className="shadow-md rounded-4 p-3"
             title="Permissions"
          
-            extra={<select className="shadow-sm rounded-2 p-">
+            extra={<select className="shadow-sm rounded-2 ">
               <option>2024</option>
               <option>2024</option>
               <option>2024</option>
@@ -624,9 +624,24 @@ export default function Landing() {
           </Card>
         </Col>
       </Row>
+      <Row gutter={[16,16]}   className="mt-3 containe-fluid">
+        <Col xs={24} sm={22} md={24} lg={24} xl={24} className="mt-3 shadow-md rounded-4 p-3 bg-white">
+        <div className="d-flex justify-content-between"> 
+        <h4>Working Hours</h4>
+        <select className="shadow-sm rounded-2 p-2 ">
+              <option>Jan</option>
+              <option>Feb</option>
+              <option>Mar</option>
+              <option>Apr</option>
+            </select>
+            </div>
+          <Chartnew />
+        </Col>
 
-       
+      </Row>
+      <br/>
      </Layout>
+       
       ),
     },
     {

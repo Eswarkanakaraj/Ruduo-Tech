@@ -1,7 +1,11 @@
 @import 'antd/dist/reset.css';
+@import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+/* In globals.css or a custom stylesheet */
+
+  
